@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neshma Patel | Front End Software Engineer</title>
+
+    <!--Font awesome icons CDN-->
+    <script src="https://kit.fontawesome.com/78a64c7e06.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Peddana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body id="mainBody" onload="autoOpenFirstExpButtonOnClickContent();">
+    <!--Header Section-->
+    <header class="headerTagContainer">
+        <div class="headerWrapper" id="headerItemsContainer">
+            <!--Self Brand Logo Section-->
+            <div class="headerItem headerLogoItemContainer">
+                <a href="#home"><img id="logo" src="images/logo/nesh-Thumbnail.png" alt="Neshma Patel Logo Image"></a>
+            </div>
+
+            <!--Menu Button Section For Small Screen-->
+
+            <div class="stateOne">
+                <button id="menuClickButton" class="menuButton" onclick="menuButtonState()">
+                    <div class="petaStateOne"> </div>  
+                    <div class="petaStateTwo"> </div>
+                </button>
+            </div>
+
+            <!-- Navigation Menu Section-->
+            <div class="headerItem headerMenuItemContainer">
+                <div class="menuLinkContent">
+                    <a id="jumpHome" href="#home" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">Introduction</span></a>
+                    <a id="jumpAbout" href="#about" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">About</span></a>
+                    <a id="jumpProjects" href="#projects" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">Projects</span></a>
+                    <a id="jumpExperience" href="#experience" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">Experience</span></a>
+                    <a id="jumpContact" href="#contact" class="menu-location" onclick="jumpToSection(this.id)"><span >Contact</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Section-->
+    <main>
+        <div id="home" class="mainHomeContainer">
+            <!--Banner Section-->
+            <div class="firstHeaderGroupContent">
+                <div class="nameWrapper">
+                    <h1>Neshma Patel</h1>
+                </div>
+                <div class="postWrapper">
+                    <h2>Front-End Software Engineer / Web Developer</h2>
+                </div>
+                <div class="sentanceWrapper">
+                    <h3>I code beautifully and enjoy what I do.</h3>
+                </div>
+                <div class="bannerButtonWrapper">
+                    <div class="buttonBanner">
+                        <div>
+                            <a id="changeButton" title="I'm Here >"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Banner Image-->
+                <div class="homeImageWrapper">
+                    <div class="homeImageItem"><img src="images/backgrounds/profile-black-back.png" alt="Lady on laptop image imprinted on iphone cover"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!-- About Me -->
+        <div id="about" class="mainAboutContentRow">
+            <div class="mainAboutContentColumnOne">
+                <div class="mainAboutTextParaContent">
+                    <h2 id="about" class="menuHeaderTwo">About Me</h2>
+                    <p>Neshma Patel is an innovative and design-oriented front-end software Engineer. She strives to build immersive and beautiful web applications through carefully crafted code, user-centric design, and the best customer experience with
+                        accessibility for all.</p>
+                    <p>Neshma enjoys a good cultural conversation and she is enthusiastic about working with an agile team made of diverse backgrounds.</p>
+
+                    <hr>
+
+
+                    <p>When not online, Neshma can be found gardening new seeds, watering plants, trying out the latest recipes in the kitchen, or enjoying social events with family and friends.</p>
+                </div>
+            </div>
+            <div class="mainAboutContentColumnOne">
+                <div class="mainAboutImageContent">
+                    <img src="images/backgrounds/matrix-pc-image.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!--About Me- Work-Output -->
+        <div class="servicesContainer">
+            <div class="flipPanelAboutMeWorkSkills">
+                <div class="flipPanelWrapper">
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flipPanelAboutMeWorkSkills">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/services/fliplogos/fast-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="flip-card-back-content">
+                                            <h2>Fast</h2>
+                                            <ul class="flip-card-ul-list">
+                                                <li>Fast load times</li>
+                                                <li>Lag free user interaction</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/services/fliplogos/responsive-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-back-content">
+                                        <h2>Responsive</h2>
+                                        <p>Layouts work on any type of device</p>
+                                        <ul class="flip-card-ul-list">
+                                            <li>Desktop</li>
+                                            <li>Laptop</li>
+                                            <li>Mobile</li>
+                                            <li>Tablet</li>
+                                            <li>E-readers</li>
+                                            <li>Printers</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/services/fliplogos/intuitive-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-back-content">
+                                        <h2>Intuitive</h2>
+                                        <ul class="flip-card-ul-list">
+                                            <li>Intuitive Web Design and User Interface(UX/UI)</li>
+                                            <li>Easy to Navigate</li>
+                                            <li>Tell the Whole Story</li>
+                                            <li>Speedy and Reliable</li>
+                                            <li>Strong brand and Personality</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/services/fliplogos/dynamic-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-back-content">
+                                        <h2>Dynamic</h2>
+                                        <ul class="flip-card-ul-list">
+                                            <li>Web-pages that are generated in real time</li>
+                                            <li>Provides custom content on trigger</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!--About Me- Technology Stack -->
+        <div class="techStackWrapper">
+            <div class="techStackItem techStackHeaderContainer">
+                <h2 class="techStackHeader">
+                    <span>
+                        <img src="./images/techStackUsed/tech-stack-mid.png">
+                    </span>&nbsp;&nbsp;Technology Stack</h2>
+            </div>
+            <div class="techStackItem">
+                <div class="scene">
+                    <div class="carousel">
+                        <div class="carousel__cell" id="one">
+                            <div class="carousel-content">
+                                <h5>HTML</h5>
+                                <img src="./images/techStackUsed/html-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="two">
+                            <div class="carousel-content">
+                                <h5>CSS</h5>
+                                <img src="./images/techStackUsed/css-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="three">
+                            <div class="carousel-content">
+                                <h5>JavaScript</h5>
+                                <img src="./images/techStackUsed/js-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="four">
+                            <div class="carousel-content">
+                                <h5>React</h5>
+                                <img src="./images/techStackUsed/react-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="five">
+                            <div class="carousel-content">
+                                <h5>Atlassian</h5>
+                                <img src="./images/techStackUsed/atlassian-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="six">
+                            <div class="carousel-content">
+                                <h5>jQuery</h5>
+                                <img src="./images/techStackUsed/jquery-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="seven">
+                            <div class="carousel-content">
+                                <h5>PostgreSQL</h5>
+                                <img src="./images/techStackUsed/postgresql-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="eight">
+                            <div class="carousel-content">
+                                <h5>Adobe <br> Photoshop</h5>
+                                <img src="./images/techStackUsed/adobe-photoshop-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>Node.js</h5>
+                                <img src="./images/techStackUsed/nodejs-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>InVision</h5>
+                                <img src="./images/techStackUsed/Invision-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>AngularJS</h5>
+                                <img src="./images/techStackUsed/angularjs-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>WordPress</h5>
+                                <img src="./images/techStackUsed/wordpress-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>Bootstrap</h5>
+                                <img src="./images/techStackUsed/bootstrap-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>AWS</h5>
+                                <img src="./images/techStackUsed/amazon-web-services-icon.png">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>More</h5>
+                                <img src="./images/techStackUsed/more-icon.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="carousel-access-button-container" style="text-align: center;">
+
+                    <button class="previous-button previous round">&#8249;&nbsp;Previous</button>
+                    <button class="next-button next round">&nbsp;&nbsp;Next&nbsp;&#8250;&nbsp;&nbsp;&nbsp;</button>
+                </p>
+            </div>
+            <div class="techStackItem techStackHeaderContainer">
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!--About Me- Services -->
+        <div class="profServicesWrapper">
+            <div class="profServicesItem">
+                <div class="techStackItem techStackHeaderContainer">
+                    <h2 class="techStackHeader">
+                        <span>
+                            <img src="./images/profServices/prof-services-icon-set2.png">
+                        </span>&nbsp;&nbsp;Services</h2>
+                </div>
+                <div class="devicesImageContainer">
+                    <div class="devicesImageItem">
+                        <img src="./images/profServices/responsive-design-part-1.jpg">
+                    </div>
+                    <div class="devicesImageItem">
+                        <img src="./images/profServices/responsive-design-part-2.jpg">
+                    </div>
+                </div>
+                <div class="profServicesListHeaderContainer">
+                    <div class="profServicesListHeaderItem">
+                        <h5>Hire a Web Developer/Front-End Software Engineer/Software Engineer</h5>
+                    </div>
+                </div>
+                <div class="profServicesListBulletContainer">
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Web Development</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webDevButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icons-plus-click-button.png"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebDevContent">
+                            <div class="profServicesListDetails">
+                                <p>Website Development
+                                    <ul>
+                                        <li>Responsive</li>
+                                        <li>Adaptive</li>
+                                        <li>Mobile-First</li>
+                                        <li>Desktop-First</li>
+                                    </ul>
+                                </p>
+                                <p>Web Application Development</p>
+                                <p>Custom Websites</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Wordpress development</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="wordpressDevButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icons-plus-click-button.png"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWordpressDevContent">
+                            <div class="profServicesListDetails">
+                                <p>WordPress Website Development</p>
+                                <p>WordPress Website Maintenance</p>
+                                <p>WordPress Theme Customization</p>
+                                <p>WordPress Security</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Website Support and Maintenance Services</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webSupportButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icons-plus-click-button.png"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebSupportContent">
+                            <div class="profServicesListDetails">
+                                <p>Website Maintenance</p>
+                                <p>Website Update Services</p>
+                                <p>Website Upgrade Services</p>
+                                <p>Fix Slow Websites</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Website Management</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webManageButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icons-plus-click-button.png"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebManageContent">
+                            <div class="profServicesListDetails">
+                                <p> Website Management Services</p>
+                                <p> Website Consulting</p>
+                                <p> Web Hosting Services Selection</p>
+                                <p> Rent a Website</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Web Design & Re-Design</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webDesignButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icons-plus-click-button.png"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebDesignContent">
+                            <div class="profServicesListDetails">
+                                <p>Manufacturing/Industrial</p>
+                                <p>Ecommerce / Retail</p>
+                                <p>Technology</p>
+                                <p>Education</p>
+                                <p>Real-Estate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Performance, SEO(Search Engine Optimization) & Accessibility Testing</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="perfSeoButton" onclick="openServiceDetails(this.id);"><img src=" ./images/profServices/icons-plus-click-button.png "></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer ">
+                            <hr class="profServHrTag ">
+                        </div>
+                        <div id="showPerfSeoContent">
+                            <div class="profServicesListDetails ">
+                                <p>Improve performance using GTMetrix and Lighthouse reports </p>
+                                <p>On-Site SEO from the title tag, meta descriptions look in search results, internal links, bolded text, header tags and many more</p>
+                                <p>WordPress SEO Tools</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!-- Project Section-->
+    <section>
+        <div id="projects" class="projectSectionWrapper">
+            <div class="projectSectionKidt">
+                <div class="project-Title">
+                    <h2 id="projects" class="menuHeaderTwo">Projects</h2>
+                </div>
+            </div>
+            <div class="projectSectionKidt">
+                <div class="projectSubSectionDetailsWrapper">
+                    <div class="projectSubSectionDetailsWrapperKidt">
+                        <div class="projectSubSectionDetailsImageContainer"><img src="images/projects/project-1.jpg" alt="project1 image of laptop keyboard showing up"></div>
+                        <div class="projectAppTitle">
+                            <h6 class="headerProject">Project-1 Title</h6>
+                        </div>
+                        <div class="projectAppDesc">
+                            <p class="projectAppDescDetails"><strong>Project Description</strong></p>
+                            <p class="projectAppDescDetails"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sequi sunt illum! Quo quia perspiciatis quos dignissimos a omnis est porro et ut? Sunt dignissimos blanditiis unde illum ipsa? Delectus!</p>
+                        </div>
+                        <div class="projectAppTechStackTitle">
+                            <p>Application Technology Stack</p>
+                        </div>
+                        <div class="splControlWidth">
+                            <div class="marquee">
+                                <ul class="marquee-content">
+                                    <li class="tooltip"><span class="tooltiptext">HTML5</span><i class="fab fa-html5" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">CSS3</span><i class="fab fa-css3" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">JavaScript</span><i class="fab fa-js"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">GitHub</span><i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">codepen</span><i class="fab fa-codepen"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">React</span><i class="fab fa-react"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">Node.js</span><i class="fab fa-node"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="codeRepoContainer">
+                            <p><strong>Code Repository</strong></p>
+                            <p class="codeRepoGitLink"><a href="#"><i class="fab fa-github fa-lg fa-3x "></i></a></p>
+                        </div>
+                        <div class="projectWebAppLiveContainer">
+                            <p><strong>Web Link</strong></p>
+                            <p class="projectWebAppLiveLink"><a href="#"><i class="fas fa-link fa-lg fa-3x"></i></a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="projectSubSectionDetailsWrapperKidt">
+                        <div class="projectSubSectionDetailsImageContainer"><img src="images/projects/project-2.jpg" alt="project1 image of laptop keyboard showing up"></div>
+                        <div class="projectAppTitle">
+                            <h6 class="headerProject">Project-2 Title</h6>
+                        </div>
+                        <div class="projectAppDesc">
+                            <p class="projectAppDescDetails"><strong>Project Description</strong></p>
+                            <p class="projectAppDescDetails"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sequi sunt illum! Quo quia perspiciatis quos dignissimos a omnis est porro et ut? Sunt dignissimos blanditiis unde illum ipsa? Delectus!</p>
+                        </div>
+                        <div class="projectAppTechStackTitle">
+                            <p>Application Technology Stack</p>
+                        </div>
+                        <div class="splControlWidth">
+                            <div class="marquee">
+                                <ul class="marquee-content">
+                                    <li class="tooltip"><span class="tooltiptext">HTML5</span><i class="fab fa-html5" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">CSS3</span><i class="fab fa-css3" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">JavaScript</span><i class="fab fa-js"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">GitHub</span><i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">codepen</span><i class="fab fa-codepen"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">React</span><i class="fab fa-react"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">Node.js</span><i class="fab fa-node"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="codeRepoContainer">
+                            <p><strong>Code Repository</strong></p>
+                            <p class="codeRepoGitLink"><a href="#"><i class="fab fa-github fa-lg fa-3x "></i></a></p>
+                        </div>
+                        <div class="projectWebAppLiveContainer">
+                            <p><strong>Web Link</strong></p>
+                            <p class="projectWebAppLiveLink"><a href="#"><i class="fas fa-link fa-lg fa-3x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!-- Experience Section-->
+    <section>
+        <div id="experience" class="experienceSectionWrapper">
+            <div class="experienceSectionKidt">
+                <div class="experienceHeaderContainer">
+                    <div class="experienceHeader">
+                        <h2 id="experience" class="menuHeaderTwo experience-Title">Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="experienceSectionKidt">
+                <!-- <div class="testingPlease"> -->
+                <div class="experienceCompanyLogoUlList">
+                    <li class="setLogoList">
+                        <a id="secondSubExpContainerButton" class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Loka');"><img src="images/experience-logo/loka_idea_logo.png" alt="Loka Idea LLC Company logo with vibrant colors"></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Vanguard');"><img src="images/experience-logo/vanguard-logo.png" alt="Vanguard company logo with dark red color"></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Vision');"><img src="images/experience-logo/vision-logo.png" alt="Vision Metering LLC company logo with italic and black text with stylish shading"></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Thinkful');"><img src="images/experience-logo/projects-logo/thinkful-logo.png" alt="Thinkful Chegg logo with Black text and white background"></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Quintrix');"><img src="images/experience-logo/projects-logo/quintrix-logo.png" alt="Quintrix company logo with Black text and yellow background"></a>
+                    </li>
+                    <li>
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'DEV');"><img src="images/experience-logo/internship-logo/dev-it-logo.png" alt="Dev It Limited LLC company logo with green arrows merging "></a>
+                    </li>
+                    <li>
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Wipro');"><img src="images/experience-logo/internship-logo/wipro-logo.png" alt="Wipro company logo with doted circles of shaded colors"></a>
+                    </li>
+                </div>
+                <!-- Loka content-->
+                <div id="Loka" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Experience</h6>
+                    </div>
+                    <!--Ribbon Loka-->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.lokaidea.com/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/4nkdDkBeTbaxaPnHA">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.lokaidea.com/wp-content/uploads/2020/08/augmented_reality_promo.mp4">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!--Ribbon Loka ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="petaExperienceContentContainerChild jobPositionTitle">Freelance Front-End Software Engineer</div>
+                        <ul class="petaExperienceContentContainerChild currentCompanyContentUl">
+                            <li>Develop various web applications, product catalogs using React, Angular JS, HTML5, CSS3, JS, WordPress.</li>
+                            <li>Implement and manage web-based applications, databases, and interfaces from initial architecture through development, test, and deployment.</li>
+                            <li>Design, develop and troubleshoot an enterprise-class website, provide life-cycle management for software and code.</li>
+                            <li>Implement, maintain, install, configure, and troubleshoot content management systems.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Vanguard content-->
+                <div id="Vanguard" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Experience</h6>
+                    </div>
+                    <!--Ribbon Vanguard-->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://investor.vanguard.com/corporate-portal/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/4nkdDkBeTbaxaPnHA">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="http://vanguard.vo.llnwd.net/o1/EXT/IIG/pct-video.mp4">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!--Ribbon Vanguard ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="petaExperienceContentContainerChild jobPositionTitle">Front-End Software Engineer / Software Engineer</div>
+                        <ul class="petaExperienceContentContainerChild currentCompanyContentUl ">
+                            <li>Develop several Vanguard institutional applications – Investment comparison tools and Asset management tools.</li>
+                            <li> Responsible for front-end development using Angular JS, React, HTML 5, CSS3, SAAS, JS.</li>
+                            <li>Develop unit test code using various frameworks such as Jasmine, Karma. Experience working with task automation tool Grunt, develop designs using Invision, Git, NPM, VUI (Vanguard UI) library web components.</li>
+                            <li>Proficiency in using NGA tools and Atlassian stack tools JIRA for Agile Project Management, Bitbucket for code repository and code review, automation build tool, Bamboo, Database management systems such as PostgreSQL, cloud
+                                computing platform AWS.</li>
+                            <li>Acquire knowledge on web services development using core JAVA, unit testing with Junit, and integration testing with Cucumber.</li>
+                            <li>Experience working with DevOps, Agile teams, providing on-call production support.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Vision content-->
+                <div id="Vision" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Experience</h6>
+                    </div>
+                    <!--Ribbon Vision-->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.visionmetering.com/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/zgcHrygxkdQRW1zn7">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.visionmetering.com/engineering-standards/">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!--Ribbon Vision ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="jobPositionTitle petaExperienceContentContainerChild">Software Engineer</div>
+                        <ul class="currentCompanyContentUl petaExperienceContentContainerChild">
+                            <li>Primary developer for Electric meter web-based application and firmware, <a href="https://en.wikipedia.org/wiki/LoRa">LoRa</a> (Long range, low power wireless platform technology for building Internet of Things (
+                                <a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT</a>) networks worldwide), web application development using HTML5, CSS, JAVASCRIPT, Node.
+                            </li>
+
+                            <li>Experience with LoRaWAN stack and various ANSI meter communication protocols.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Thinkful content -->
+                <div id="Thinkful" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Project</h6>
+                    </div>
+                    <!--Ribbon Thinkful-->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.thinkful.com/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/zx52fRnKeMoET87G8">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.thinkful.com/bootcamp/web-development/#outcomes">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!--Ribbon Thinkful ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="jobPositionTitle petaExperienceContentContainerChild">Front-End Software Developer Trainee / Software Engineer</div>
+                        <ul class="currentCompanyContentUl petaExperienceContentContainerChild">
+                            <li>Experience using Express, React, Node, PostgreSQL to build web applications.</li>
+                            <li>Pair programming with senior developers and peers while building dynamic full-stack web apps.</li>
+                            <li>Well-Versed in JavaScript, HTML5, CSS3, jQuery for front-end development.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Quintrix content-->
+                <div id="Quintrix" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Project</h6>
+                    </div>
+                    <!--Ribbon Quintrix-Solutions -->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.quintrixsolutions.com/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/CmumHVZ7RNHkat8N8">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://youtu.be/q9b94DXoj98">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- Ribbon Quintrix-Solutions ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="jobPositionTitle petaExperienceContentContainerChild">Front-End Software Developer Trainee / Software Engineer</div>
+                        <ul class="currentCompanyContentUl petaExperienceContentContainerChild">
+                            <li>Application development using MySQL and JAVA.</li>
+                            <li>BPM application development in APPIAN.</li>
+                            <li>Process modeling and designing using SAIL. Site creation using records and reports.</li>
+                            <li>Experience with Java plugin development, CDT, data manipulation using Query Database and Query Rule, application interaction with third-party interfaces, acquired Appian designer, and Appian developer training.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- DEV content-->
+                <div id="DEV" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Internship</h6>
+                    </div>
+                    <!-- Ribbon DEV -->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.devitpl.com/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/Nnz9GZ1c1U1Yw6t8A">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.devitpl.com/dev-labs/">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- Ribbon DEV ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="jobPositionTitle petaExperienceContentContainerChild">Front-End Software Engineer Intern</div>
+                        <div class="currentCompanyContentUl petaExperienceContentContainerChild"><img src="images/internship-images/internship-image-1.png" alt="Woman in black professional suit writes in notepad with viewing graphs in cellphone and some data in laptop"></div>
+                    </div>
+                </div>
+                <!-- Wipro content-->
+                <div id="Wipro" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Internship</h6>
+                    </div>
+                    <!-- Ribbon Wipro -->
+                    <div class="ribbonNav">
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.wipro.com/">
+                                <span class="fa fa-link"></span>
+                                <span>Website</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/RErcJL5qpFmKLYYn6">
+                                <span class="fas fa-location-arrow"></span>
+                                <span>Location</span>
+                            </a>
+                        </li>
+                        <li class="currentCompanyMenu">
+                            <a href="https://www.wipro.com/infrastructure/devops/">
+                                <span class="fas fa-vr-cardboard"></span>
+                                <span>Let's Dive</span>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- Ribbon Wipro ends-->
+                    <br>
+                    <div class="petaExperienceContentContainer">
+                        <div class="jobPositionTitle petaExperienceContentContainerChild">Software Engineer Intern</div>
+                        <div class="currentCompanyContentUl petaExperienceContentContainerChild"><img src="images/internship-images/internship-image-2.png" alt="group of interns talking with one another"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!-- Contact Section-->
+
+    <article>
+        <div class="contactSectionContainer">
+            <div class="contactSectionKidt">
+                <div class="contact-Title">
+                    <h2 id="contact" class="menuHeaderTwo">Contact</h2>
+                </div>
+
+            </div>
+            <div class="backImageContainer">
+                <div class="formContainer">
+                    <form action="https://formspree.io/f/xgepojyk" method="POST">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" class="firstNameInputBoxContact" required>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" class="lastNameInputBoxContact" required>
+                        <textarea name="message" placeholder="Have a question or want to work together? Type your message here." class="messageInputBoxContact" required></textarea>
+                        <button type="submit" class="sendButtonInputBoxContact">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!--Content Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-left">
+            <div class="footer-name">
+                <h3 class="footerHead">Neshma <span>Patel</span></h3>
+            </div>
+            <p class="footer-links">
+                <a href="#home">Introduction</a><span>&nbsp;&nbsp;</span>
+                <a href="#about">About</a><span>&nbsp;&nbsp;</span>
+                <a href="#projects">Projects</a><span>&nbsp;&nbsp;</span>
+                <a href="#experience">Experience</a><span>&nbsp;&nbsp;</span>
+                <a href="#contact">Contact</a>
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            <div class="footer-center-kidt">
+                <p><a href="https://goo.gl/maps/JaFYaRLik1NM8PGSA"><i class="fa fa-map-marker"></i></a></p>
+                <p><span>Charlotte, NC, USA.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+            </div>
+            <div class="footer-center-kidt">
+                <p><a href="mailto:support@company.com?subject=I%20want%20to%20connect%20with%20you"><i class="fa fa-envelope"></i></a></p>
+                <p><a href="mailto:support@company.com?subject=I%20want%20to%20connect%20with%20you"><span>contactnesh61@gmail.com</span></a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Connect @ Nesh</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-codepen"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/neshdev999"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="splCopyRightYear">
+            <p class="footer-company-name">nesh &copy; <span id="copyRightYear"></span></p>
+        </div>
+    </footer>
+
+    <!--Javascript Files-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
