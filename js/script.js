@@ -4,6 +4,7 @@ var petaStateOneVar = document.getElementsByClassName("petaStateOne");
 var petaStateTwoVar = document.getElementsByClassName("petaStateTwo");
 var headerMenuItemContainerChanger = document.getElementsByClassName("headerMenuItemContainer");
 var getClassElement = document.getElementById("mainBody");
+var mediaQuery = window.matchMedia('((max-width: 992px))');
 
 function menuButtonState() {
 
@@ -50,7 +51,9 @@ function jumpToSection(specificId) {
             petaStateOneVar[0].style.transform = "rotate(0deg)";
             petaStateTwoVar[0].style.animation = "spin 1s linear 1";
             petaStateTwoVar[0].style.transform = "rotate(-0deg)";
-            headerMenuItemContainerChanger[0].style.display = "none";
+            if (mediaQuery.matches) {
+                headerMenuItemContainerChanger[0].style.display = "none";
+            }
             getClassElement.classList.remove("scrollLock");
             headerNavMenu_button_click = true;
             var homeElement = document.getElementById("home");
@@ -62,7 +65,9 @@ function jumpToSection(specificId) {
             petaStateOneVar[0].style.transform = "rotate(0deg)";
             petaStateTwoVar[0].style.animation = "spin 1s linear 1";
             petaStateTwoVar[0].style.transform = "rotate(-0deg)";
-            headerMenuItemContainerChanger[0].style.display = "none";
+            if (mediaQuery.matches) {
+                headerMenuItemContainerChanger[0].style.display = "none";
+            }
             getClassElement.classList.remove("scrollLock");
             headerNavMenu_button_click = true;
             var aboutElement = document.getElementById("about");
@@ -74,7 +79,9 @@ function jumpToSection(specificId) {
             petaStateOneVar[0].style.transform = "rotate(0deg)";
             petaStateTwoVar[0].style.animation = "spin 1s linear 1";
             petaStateTwoVar[0].style.transform = "rotate(-0deg)";
-            headerMenuItemContainerChanger[0].style.display = "none";
+            if (mediaQuery.matches) {
+                headerMenuItemContainerChanger[0].style.display = "none";
+            }
             getClassElement.classList.remove("scrollLock");
             headerNavMenu_button_click = true;
             var projectsElement = document.getElementById("projects");
@@ -86,7 +93,9 @@ function jumpToSection(specificId) {
             petaStateOneVar[0].style.transform = "rotate(0deg)";
             petaStateTwoVar[0].style.animation = "spin 1s linear 1";
             petaStateTwoVar[0].style.transform = "rotate(-0deg)";
-            headerMenuItemContainerChanger[0].style.display = "none";
+            if (mediaQuery.matches) {
+                headerMenuItemContainerChanger[0].style.display = "none";
+            }
             getClassElement.classList.remove("scrollLock");
             headerNavMenu_button_click = true;
             var experienceElement = document.getElementById("experience");
@@ -98,7 +107,9 @@ function jumpToSection(specificId) {
             petaStateOneVar[0].style.transform = "rotate(0deg)";
             petaStateTwoVar[0].style.animation = "spin 1s linear 1";
             petaStateTwoVar[0].style.transform = "rotate(-0deg)";
-            headerMenuItemContainerChanger[0].style.display = "none";
+            if (mediaQuery.matches) {
+                headerMenuItemContainerChanger[0].style.display = "none";
+            }
             getClassElement.classList.remove("scrollLock");
             headerNavMenu_button_click = true;
             var contactElement = document.getElementById("contact");
