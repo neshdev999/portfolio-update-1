@@ -137,9 +137,10 @@ var carousel = document.querySelector('.carousel');
 var cellCount = 15;
 var selectedIndex = 0;
 
+/* Calculate Value of carousel cell width based on choosen number of cell
 var tz = Math.round((210 / 2) / Math.tan(Math.PI / 15));
-console.log("output: ");
-console.log(tz);
+console.log("output: "+ tz);
+*/
 
 function rotateCarousel() {
     var angle = selectedIndex / cellCount * -360;
@@ -157,6 +158,59 @@ nextButton.addEventListener('click', function() {
     selectedIndex++;
     rotateCarousel();
 });
+
+/*Technology Stack Image Weblink Selection */
+
+function goToWebLink(imageId) {
+
+    switch (imageId) {
+        case 'htmlFiveSource':
+            window.location.assign("https://www.w3.org/html/");
+            break;
+        case 'cssSource':
+            window.location.assign("https://www.w3.org/Style/CSS/");
+            break;
+        case 'javascriptSource':
+            window.location.assign("https://www.ecma-international.org/");
+            break;
+        case 'reactSource':
+            window.location.assign("https://reactjs.org/");
+            break;
+        case 'atlassianSource':
+            window.location.assign("https://www.atlassian.com/");
+            break;
+        case 'jQuerySource':
+            window.location.assign("https://jquery.com/");
+            break;
+        case 'postgreSQLSource':
+            window.location.assign("https://www.postgresql.org/");
+            break;
+        case 'adobePhotoshopSource':
+            window.location.assign("https://www.adobe.com/products/photoshop.html");
+            break;
+        case 'invisionSource':
+            window.location.assign("https://www.invisionapp.com/");
+            break;
+        case 'angularJSSource':
+            window.location.assign("https://angularjs.org/");
+            break;
+        case 'wordpressSource':
+            window.location.assign("https://wordpress.com/");
+            break;
+        case 'bootstrapSource':
+            window.location.assign("https://getbootstrap.com/");
+            break;
+        case 'awsSource':
+            window.location.assign("https://aws.amazon.com/");
+            break;
+        case 'moreSource':
+            window.alert("Coming Soon :)");
+            break;
+        default:
+            console.log();
+
+    }
+}
 
 
 
