@@ -1004,6 +1004,7 @@
         font-family: 'Comfortaa', cursive;
         color: #88898E;
     }
+    /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         .devicesImageContainer {
@@ -1089,6 +1090,7 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         projectSubSectionDetailsImageContainer>img {
@@ -1120,6 +1122,7 @@
         margin: 20px;
         text-align: justify;
     }
+    /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         .projectAppDescDetails {
@@ -1315,6 +1318,7 @@
         padding: 10px;
         flex: 1;
     }
+    /* Small Screen */
     
     @media screen and (max-width: 992px) {
         .experienceCompanyLogoUlList {
@@ -1355,6 +1359,7 @@
         margin-left: 60px;
         margin-right: 60px;
     }
+    /*Small Screen */
     
     @media screen and (max-width: 992px) {
         .currentCompanyContent {
@@ -1395,6 +1400,7 @@
         margin: 2%;
         flex: 1;
     }
+    /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         .ribbonNav {
@@ -1516,6 +1522,7 @@
         justify-content: center;
         align-items: center;
     }
+    /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         .petaExperienceContentContainer {
@@ -1595,6 +1602,7 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+    /*Small Screen */
     
     @media screen and (max-width: 992px) {
         .backImageContainer {
@@ -1727,6 +1735,7 @@
     .footer-links a {
         flex: 1 1 auto;
     }
+    /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         .footer-links {
@@ -1781,6 +1790,7 @@
         margin: 10px 15px;
         vertical-align: middle;
     }
+    /* Small Screen */
     
     @media screen and (max-width: 992px) {
         .footer-center {
@@ -1872,6 +1882,7 @@
     .footer-icons a:hover {
         color: #33BBD7;
     }
+    /* Small Screen */
     
     @media (max-width: 992px) {
         .footer-container {
@@ -1888,5 +1899,75 @@
         .footer-container .footer-center i {
             margin-left: 0;
         }
+    }
+    /****************************************************/
+    /* Custom Dilog box */
+    
+    #dialogbox {
+        display: none;
+        position: fixed;
+        border-radius: 7px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        z-index: 10000;
+        border: 2px solid gray;
+        background-color: rgba(255, 255, 255, 0.91);
+    }
+    /*For Desktop Screen */
+    
+    @media screen and (min-width: 992px) {
+        #dialogbox {
+            width: 550px;
+        }
+    }
+    
+    #dialogbox>div {
+        margin: 8px;
+    }
+    
+    #dialogbox>div>#dialogboxhead {
+        background-color: black;
+        font-size: 19px;
+        padding: 10px;
+        color: #CCC;
+    }
+    
+    .centeredPrompt {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        padding: 15px;
+    }
+    
+    .centeredPrompt__item+.centeredPrompt__item {
+        margin-top: 5px;
+    }
+    
+    .centeredPromptIcon {
+        font-size: 65px;
+        line-height: 0;
+    }
+    
+    .centeredPromptLabel {
+        color: #0D375A;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .centeredPromptDetails {
+        color: #0D375A;
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .icon {
+        color: #3298FC;
     }
     /****************************************************/

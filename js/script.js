@@ -1,11 +1,17 @@
-/* --- Navigation Bar Section ---*/
+/* --- Navigation Bar Section Variables ---*/
 var headerNavMenu_button_click = true;
 var petaStateOneVar = document.getElementsByClassName("petaStateOne");
 var petaStateTwoVar = document.getElementsByClassName("petaStateTwo");
 var headerMenuItemContainerChanger = document.getElementsByClassName("headerMenuItemContainer");
 var getClassElement = document.getElementById("mainBody");
-var mediaQuery = window.matchMedia('((max-width: 992px))');
+var mediaQuery = window.matchMedia('(max-width: 992px)');
 
+/*Technology Stack -More Item Custom Dilog Box Variables */
+var dialogbox = document.getElementById('dialogbox');
+var Alert = new CustomAlert();
+
+
+/* --- Navigation Bar Section---*/
 function menuButtonState() {
 
     if (headerNavMenu_button_click) {
@@ -159,8 +165,22 @@ nextButton.addEventListener('click', function() {
     rotateCarousel();
 });
 
-/*Technology Stack Image Weblink Selection */
 
+/*Technology Stack -More Item Custom Dilog Box Section */
+
+function CustomAlert() {
+    this.render = function(dialog) {
+
+        dialogbox.style.display = "block";
+        document.getElementById('dialogboxhead').innerHTML = dialog;
+        document.getElementById('dilogSplButton').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+    }
+    this.ok = function() {
+        document.getElementById('dialogbox').style.display = "none";
+    }
+}
+
+/*Technology Stack Image Weblink Selection */
 function goToWebLink(imageId) {
 
     switch (imageId) {
@@ -204,11 +224,10 @@ function goToWebLink(imageId) {
             window.location.assign("https://aws.amazon.com/");
             break;
         case 'moreSource':
-            window.alert("Coming Soon :)");
+            Alert.render("&nbsp;" + "&nbsp;" + '<i class="fa fa-user-circle" aria-hidden="true"></i>' + "&nbsp;" + "&nbsp;" + "Hey Visitor! Wait..." + "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + "It's Coming Soon!!!" + "&nbsp;");
             break;
         default:
             console.log();
-
     }
 }
 
