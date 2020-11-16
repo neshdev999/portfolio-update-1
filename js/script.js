@@ -143,10 +143,12 @@ var carousel = document.querySelector('.carousel');
 var cellCount = 15;
 var selectedIndex = 0;
 
-/* Calculate Value of carousel cell width based on choosen number of cell
-var tz = Math.round((210 / 2) / Math.tan(Math.PI / 15));
-console.log("output: "+ tz);
-*/
+/* Calculate Value of carousel cell width based on choosen number of cell */
+
+// var tz = Math.round((210 / 2) / Math.tan(Math.PI / 15));
+/*To Confirm output value and then utilize same value*/
+// console.log("output: "+ tz);  
+
 
 function rotateCarousel() {
     var angle = selectedIndex / cellCount * -360;
