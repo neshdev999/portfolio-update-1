@@ -187,43 +187,46 @@ function goToWebLink(imageId) {
 
     switch (imageId) {
         case 'htmlFiveSource':
-            window.location.assign("https://www.w3.org/html/");
+            window.open("https://www.w3.org/html/", "_blank");
             break;
         case 'cssSource':
-            window.location.assign("https://www.w3.org/Style/CSS/");
+            window.open("https://www.w3.org/Style/CSS/", "_blank");
             break;
         case 'javascriptSource':
-            window.location.assign("https://www.ecma-international.org/");
+            window.open("https://www.ecma-international.org/", "_blank");
             break;
         case 'reactSource':
-            window.location.assign("https://reactjs.org/");
+            window.open("https://reactjs.org/", "_blank");
             break;
         case 'atlassianSource':
-            window.location.assign("https://www.atlassian.com/");
+            window.open("https://www.atlassian.com/", "_blank");
             break;
         case 'jQuerySource':
-            window.location.assign("https://jquery.com/");
+            window.open("https://jquery.com/", "_blank");
             break;
         case 'postgreSQLSource':
-            window.location.assign("https://www.postgresql.org/");
+            window.open("https://www.postgresql.org/", "_blank");
             break;
         case 'adobePhotoshopSource':
-            window.location.assign("https://www.adobe.com/products/photoshop.html");
+            window.open("https://www.adobe.com/products/photoshop.html", "_blank");
+            break;
+        case 'nodeJSSource':
+            window.open("https://nodejs.org/en/", "_blank");
             break;
         case 'invisionSource':
-            window.location.assign("https://www.invisionapp.com/");
+            window.open("https://www.invisionapp.com/", "_blank");
             break;
         case 'angularJSSource':
-            window.location.assign("https://angularjs.org/");
+            window.open("https://angularjs.org/", "_blank");
             break;
         case 'wordpressSource':
-            window.location.assign("https://wordpress.com/");
+            window.open("https://wordpress.com/", "_blank");
             break;
         case 'bootstrapSource':
-            window.location.assign("https://getbootstrap.com/");
+            window.open("https://getbootstrap.com/", "_blank");
             break;
         case 'awsSource':
-            window.location.assign("https://aws.amazon.com/");
+            window.open("https://aws.amazon.com/", "_blank");
             break;
         case 'moreSource':
             Alert.render("&nbsp;" + "&nbsp;" + '<i class="fa fa-user-circle" aria-hidden="true"></i>' + "&nbsp;" + "&nbsp;" + "Hey Visitor! Wait..." + "&nbsp;" + "&nbsp;" + "&nbsp;" + "&nbsp;" + "It's Coming Soon!!!" + "&nbsp;");
