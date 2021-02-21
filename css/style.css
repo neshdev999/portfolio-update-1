@@ -1084,18 +1084,25 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 400px;
+        background-color: #cfd8dd71;
+        margin: 2px;
+        padding: 10px;
+        border-radius: 5px;
     }
     
-    .projectSubSectionDetailsImageContainer>img {
-        margin-left: 5%;
-        margin-right: 5%;
+    .projectSubSectionDetailsImageItem {
+        flex: 1;
+    }
+    
+    .projectSubSectionDetailsImageItem>img {
+        width: 100%;
     }
     /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
-        projectSubSectionDetailsImageContainer>img {
-            margin-left: 10px;
-            margin-right: 10px;
+        .projectSubSectionDetailsImageContainer {
+            height: 600px;
         }
     }
     
