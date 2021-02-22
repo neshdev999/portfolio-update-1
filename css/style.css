@@ -1216,6 +1216,7 @@
     
     .marquee {
         background-color: #1c87c9;
+        background-color: black;
         color: #fff;
         display: flex;
         flex-direction: row;
