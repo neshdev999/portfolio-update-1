@@ -1084,9 +1084,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 400px;
-        background-color: #cfd8dd71;
-        margin: 2px;
+        /* height: 400px; */
+        /* background-color: #cfd8dd71; */
+        background-color: #f5f5f7;
         padding: 10px;
         border-radius: 5px;
     }
@@ -1102,7 +1102,8 @@
     
     @media screen and (min-width: 992px) {
         .projectSubSectionDetailsImageContainer {
-            height: 600px;
+            /* height: 600px; */
+            background-color: #f5f5f7;
         }
     }
     
@@ -1319,6 +1320,14 @@
         list-style-type: none;
         text-align: center;
         margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     .experienceCompanyLogoUlList li {
@@ -1386,8 +1395,6 @@
     /* Ribbon starts*/
     
     .ribbonNav {
-        margin: auto;
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1398,28 +1405,32 @@
         width: 80px;
         float: left;
         position: relative;
-        margin-left: 33px;
         cursor: pointer;
         background-color: #F5F5F7;
         list-style-type: none;
         border-left: 2px solid #d7cfc2;
         border-right: 2px solid #d7cfc2;
         transition: margin .1s, padding .1s, border 1s;
-        margin: 2%;
+        margin: 5px;
+    }
+    
+    .currentCompanyMenuUlContainer {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
         flex: 1;
+        display: flex;
     }
     /* Desktop Screen */
     
     @media screen and (min-width: 992px) {
         .ribbonNav {
             flex-direction: row;
-            width: 600px;
         }
         .currentCompanyMenu {
             margin-top: 5px;
-            margin-left: 50px;
-            margin-right: 50px;
             margin-bottom: 5px;
+            margin: 25px;
         }
     }
     
